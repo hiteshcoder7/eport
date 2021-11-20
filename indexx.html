@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="/videojs.watermalk.css">
+       <link rel="stylesheet" href="/extracss.css">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="important.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+       <style>
+         
+*{
+ margin: 0;
+ padding:0;
+ font-family: 'Poppins', sans-serif;
+}
+body{
+overflow-x: hidden;
+}
+
+.lgo{
+height: 110px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: white;
+border-radius: 14px;
+background: #ffffff;
+box-shadow:  5px 5px 10px #ebebeb,
+             -5px -5px 10px #ffffff;
+
+}
+.task{
+width: 300px;
+margin: 30px;
+height: 220px;
+background: white;
+border: 0.1px solid rgba(0, 0, 0, 0.171);
+border-radius: 10px;
+padding:5px;
+/* dummy background */
+display:flex; align-items:center;
+justify-content:center;
+flex-direction:column;
+transition: 1s;
+}
+.task:hover{
+  /* background: #e0e0e0; */
+box-shadow:  3px 3px 7px 1px #c7c7c7,
+             -3px -3px 7px 1px #f9f9f9;
+
+}
+.imgcont img{
+width: 150px;
+
+}
+.cont{
+display: flex;
+margin-top: 10px;
+flex-wrap:wrap;
+align-items:center;
+justify-content: center;
+}
+.cont-hed h1{
+margin-top: 60px;
+text-align: center;
+}
+.starting{
+height:80vh;
+background-color:white;
+flex-wrap: wrap;
+width: 100vw;
+display: flex;align-items:center;justify-content: center;
+}
+.img-start img{
+/* width: 400px; */
+}
+.textcont h1{
+font-size:60px;
+text-align: center;
+}
+.textcont{
+  margin-right: 140px;
+}
+#typed{
+font-size:40px;
+}
+#typed:after{
+content:"_";
+display:inline-block;
+animation: blank 2s infinite;
+}
+@keyframes blank {
+0%{
+opacity:0;
+}
+100%{color:black;
+
+}
+
+}
+.textcont{
+align-items:center;
+text-align: center;
+}
+.starting{
+  margin-top:30px;
+}
+.img-start{
+width: 400px;
+height: 600px;
+background:url('/Group\ 1.png');
+border: 1px solid black;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+/* background-attachment: fixed; */
+}
+.starting{
+text-align: center;
+}
+#typed{
+text-align: center;
+}
+.textcont h1{
+text-align: center;
+}
+/* .textcont #typed */
+.helloit{
+text-align: center;
+}
+/* 568 */
+@media (max-width:560px) {
+.textcont h1{
+  font-size:40px;
+}
+.textcont{
+width: 100vw;
+}
+.starting{
+  width: 100vw;text-align:center ;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  /* margin: 0; */
+}
+#typed{
+  font-size:20px
+}
+.textcont{
+  margin-right: 0px;
+}
+}
+@media (max-width:433px) {
+.textcont h1{
+  font-size:30px;
+}
+.img-start{
+  width:300px;
+  height: 400px;
+}
+.starting{
+align-items:center;
+}
+}
+.textct{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+@media (max-width:925px) {
+  .textcont{
+  margin-right: 0px;
+}
+.img-start{
+  width:300px;
+  height: 400px;
+}
+}
+.loading{
+  position:absolute;
+  height:100vh;
+  width: 100vw;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background: white;
+  position:fixed;
+  z-index: 55;
+}
+.loading.hide{
+  display:none;
+}
+/* age ki css file dusri h important se as important.css */
+
+       </style>
+           <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+           <link
+           rel="stylesheet"
+           href="https://unpkg.com/swiper/swiper-bundle.min.css"
+         />
+     
+        <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body onload="loadfunc()">
+<div class="loading" id="load">
+  <h1>Loading...</h1>
+</div>
+       <!-- <nav class="navbar">
+              <div class="content">
+                <div class="logo">
+                  <a href="#">Hitesh Kumar</a>
+                </div>
+                <ul class="menu-list">
+                  <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                  <i class="fas fa-bars"></i>
+                </div>
+              </div>
+            </nav> -->
+            
+            <!-- <div class="banner"></div> -->
+
+<div class="lgo">
+<img src="/hitesh+WEB.svg" alt="" width="140">
+</div>
+<div class="starting">
+
+<div class="textcont">
+<div class="textct">
+<h1 class="helloit" data-aos="fade-up"
+data-aos-duration="3000">Hi I am Hitesh</h1>
+<div id="typed-strings">
+  <p>Hitesh Port</p>
+  <p>Welcome here</p>
+  <p>Programmer</p>
+  <p>Learner</p>
+  <p>Web dev</p>
+  <p>Python dev</p>
+  </div>
+  </div>
+  <span id="typed" data-aos="fade-down"
+  data-aos-easing="linear"
+  data-aos-duration="1500"></span>
+  
+</div>
+<div class="img-start" data-aos="fade-left"
+data-aos-anchor="#example-anchor"
+data-aos-offset="500"
+data-aos-duration="1500">
+
+</div>
+</div>
+<div class="cont-hed" data-aos="fade-zoom-in"
+data-aos-easing="ease-in-back"
+data-aos-delay="300"
+data-aos-offset="0">
+<h1 data-aos="fade-zoom-in"
+data-aos-easing="ease-in-back"
+data-aos-delay="300"
+data-aos-offset="0">What I Provide</h1>
+</div>
+<div class="cont">
+<div class="task task-1" data-aos="zoom-in-up">
+  <div class="imgcont">
+    <img src="/videopng.png" alt="">
+  </div>
+<div class="text-cont">
+<h2>Videos</h2>
+
+</div>
+</div>
+<div class="task  task-2" data-aos="zoom-in-down">
+  <div class="imgcont">
+  <img src="/project.png" alt="">
+  </div>
+  <div class="text-cont">
+    <h2>Projects</h2>
+    </div>
+    
+</div>
+<div class="task task-3" data-aos="zoom-in-left">
+  <div class="imgcont">
+    <img src="/boyimg.png" alt="" width="30">
+  </div>
+  <div class="text-cont">
+    <h2>Blog</h2>
+    </div>
+    
+</div>
+<div class="task task-4" data-aos="zoom-in-right">
+  <div class="imgcont">
+    <img src="arts.png" alt="">
+  </div>
+  <div class="text-cont">
+    <h2>More arts</h2>
+    </div>
+    
+</div>
+</div>
+<!-- <div class="about">
+  <video
+  id="videoPlayer"
+  class="video-js vjs-big-play-centered"
+  controls
+  preload="auto"
+  width="640"
+  height="264"
+  poster="MY_VIDEO_POSTER.jpg"
+
+  muted
+>
+  <source src="/Hitesh web.mp4" type="video/mp4" />
+  <source src="/Hitesh web.mp4" type="video/webm" />
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank"
+      >supports HTML5 video</a
+    >
+  </p>
+</video>
+
+</div> -->
+<!-- <br><br> -->
+
+<div class="skilled">
+  <section class="skills" id="skills">
+    <div class="max-width">
+        <h2 class="title" data-aos="fade-up-right">My skills</h2>
+        <div class="skills-content">
+            <div class="column left">
+                <div class="text" data-aos="zoom-out-down"
+     data-aos-delay="300"
+     data-aos-offset="0">My creative skills & experiences.</div>
+                <p>It's Hitesh. Hm good to study but I am also skilled at technology. I started learning coding not from paid sources, from network like youtube, w3school, etc and Now I am also an expert at that. I am a web dev now. Also means while making webs I need to be good at technology to explore websites, I know q lot about websites because I need so many resources while learning or making, like images, video, etc. Also in the journey of this, I know a lot of things.</p>
+                <a href="#" style="text-decoration: none;">Read more</a>
+            </div>
+            <div class="column right">
+                <div class="bars" data-aos="zoom-out-down"
+                data-aos-delay="300"
+                data-aos-offset="0">
+                    <div class="info">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bars" data-aos="zoom-out-down"
+                data-aos-delay="400"
+                data-aos-offset="0">
+                    <div class="info">
+                        <span>CSS</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line css"></div>
+                </div>
+                <div class="bars" data-aos="zoom-out-down"
+                data-aos-delay="500"
+                data-aos-offset="0">
+                    <div class="info">
+                        <span>JavaScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line js"></div>
+                </div>
+                <div class="bars"data-aos="zoom-out-down"
+                data-aos-delay="600"
+                data-aos-offset="0">
+                    <div class="info">
+                        <span>PHP</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="line php"></div>
+                </div>
+                <div class="bars" data-aos="zoom-out-down"
+                data-aos-delay="700"
+                data-aos-offset="0">
+                    <div class="info">
+                        <span>MySQL</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line mysql"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+<!-- v_imo -->
+<!-- <iframe src="/vmo.html" frameborder="0" class
+="vimo" style="width:100vw;
+height:400px" scrolling="yes" ></iframe> -->
+<div include-html="vmo.html" id="header_file"></div>
+
+<div class="code-enter">
+<div class="enter">
+  <div class="txt-enter">
+<h1>Have any Code ? </h1>
+<input type="number" id="codes" onkeypress="coded()">
+</div>
+<div class="img-ent">
+<img src="/scode.png" alt="" width="230
+">
+</div>
+</div>
+</div>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+<link rel="stylesheet" href="/afterimpo.css">
+<script>
+  var loadcont = document.getElementById('load');
+  var loadfunc = () =>{
+  loadcont.style.display = 'none';
+  }
+  function loadfunc() {
+    // loadcont.style.display = 'none';
+    loadcont.classList.add('hide');
+  }
+  
+     </script>
+     <script src="js/jquery-3.6.0.min.js"></script>
+     <script src="js/include-html.min.js"></script>
+            <script>
+              const body = document.querySelector("body");
+              const navbar = document.querySelector(".navbar");
+              const menuBtn = document.querySelector(".menu-btn");
+              const cancelBtn = document.querySelector(".cancel-btn");
+              menuBtn.onclick = ()=>{
+                navbar.classList.add("show");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabled");
+              }
+              cancelBtn.onclick = ()=>{
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+              }
+              window.onscroll = ()=>{
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+              }
+            </script>
+           <script src="/typed.js"></script>    
+                 <script>
+                  var type = new Typed('#typed', {
+                    stringsElement:'#typed-strings',
+                    smartBackspace: true,
+                  typeSpeed: 100,
+                  backSpeed:60,
+                  loop:true,
+                  cursorChar: '',
+                  
+                  });
+                  
+                     </script>
+            <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+         <script src="/videojs.rotate.js">
+//   var player = videojs('my-video');
+ 
+//  player.hlsQualitySelector();
+//  var videojs = require('video.js');
+ 
+//  // The actual plugin function is exported by this module, but it is also
+//  // attached to the `Player.prototype`; so, there is no need to assign it
+//  // to a variable.
+//  require('videojs-hls-quality-selector');
+  
+//  var player = videojs('my-video');
+  
+//  player.hlsQualitySelector({
+//      displayCurrentQuality: true,
+//  });
+ 
+
+         </script>    
+         <script src="/codes.js"></script>
+         <script src="/videoplayer.js"></script>   
+         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-quality-levels/2.1.0/videojs-contrib-quality-levels.min.js" integrity="sha512-IcVOuK95FI0jeody1nzu8wg/n+PtQtxy93L8irm+TwKfORimcB2g4GSHdc0CvsK8gt1yJSbO6fCtZggBvLDDAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+         <!-- <script src="https://cdn.sc.gl/videojs-hotkeys/0.2/videojs.hotkeys.min.js"></script> -->
+<script>
+  let player = videojs('videoPlayer');
+
+let qualityLevels = player.qualityLevels();
+
+// disable quality levels with less than 720 horizontal lines of resolution when added
+// to the list.
+qualityLevels.on('addqualitylevel', function(event) {
+  let qualityLevel = event.qualityLevel;
+
+  if (qualityLevel.height >= 720) {
+    qualityLevel.enabled = true;
+  } else {
+    qualityLevel.enabled = false;
+  }
+});
+
+// example function that will toggle quality levels between SD and HD, defining and HD
+// quality as having 720 horizontal lines of resolution or more
+let toggleQuality = (function() {
+  let enable720 = true;
+
+  return function() {
+    for (var i = 0; i < qualityLevels.length; i++) {
+      let qualityLevel = qualityLevels[i];
+      if (qualityLevel.height >= 720) {
+        qualityLevel.enabled = enable720;
+      } else {
+        qualityLevel.enabled = !enable720;
+      }
+    }
+    enable720 = !enable720;
+  };
+})();
+
+let currentSelectedQualityLevelIndex = qualityLevels.selectedIndex; // -1 if no level selected
+
+// Listen to change events for when the player selects a new quality level
+qualityLevels.on('change', function() {
+  console.log('Quality Level changed!');
+  console.log('New level:', qualityLevels[qualityLevels.selectedIndex]);
+});
+
+</script>
+   <script>
+
+  function rotate(){
+var dimension = 0 ;
+
+var rotateLeftButton = createButton('&#8635;');
+var rotateLeftButton = createButton('&#8634;');
+
+function createButton(){
+    var button =document.createElement('button');
+button.classList.add('vjs-menu-button');
+button.innerHTML = '&#8635;';
+button.style.fontSize = '1.8em';
+return button;
+
+  }
+  }
+
+  videojs.registerPlugin('rotate',rotate)
+   </script>      
+<script src="/aos.js"></script>
+</body>
+</html>

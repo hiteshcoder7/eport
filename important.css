@@ -1,0 +1,82 @@
+.important h1{
+text-align:center;
+}
+.important {
+display: flex;align-items: center;
+justify-content: center;
+/* flex-wrap: wrap; */
+flex-direction: column;
+}
+.v-imo{
+       /* background:#F5FAFE; */
+       display: flex;
+align-items: center;
+       /* justify-content: center; */
+       /* flex-wrap: wrap; */
+       flex-direction: row;  
+       height: auto;
+       /* border:0.1px solid black ; */
+}
+.impo{
+  
+       background: #fff;
+    color: #545F7E;
+    box-shadow: 0 8px 8px -2px rgb(56 125 255 / 10%), 0 -8px 8px -2px rgb(56 125 255 / 10%);
+    height: 350px;
+    margin: 3px;
+    width: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+/* border: 1px solid black; */
+    align-items: center;
+
+}
+.background-line{
+       width: 76%;
+       height: 5px;
+       border-radius: 0 0 10px 10px;
+       /* position: absolute; */
+       /* top: 0; */
+       right: auto;
+       left: auto;
+       /* margin-top: 0.3px; */
+}
+.yellow{
+       background: linear-gradient(
+90deg,#F7CF06 0,#E79E00 100%);
+
+}
+.card-imp2{
+border: 1px solid black;
+/* transform:translateY(8px); */
+}
+.blue{
+background: blue;
+}
+.red{
+       background: red;
+}
+.purple{
+background: purple;
+}
+.black{
+background: black;
+}
+.impo img{
+       width: 300px;
+}
+.impo button{
+       background: linear-gradient(to bottom,#ffa330,#ff9346,#ff8559,#fb7a6a,#f07379);
+       color: #FFF;
+       box-shadow: 0 3px 16px 0 rgb(243 124 108 / 50%);
+       text-decoration: none;
+       border: none;
+       width: 80%;
+       height:30px;
+       border-radius: 10px;
+}
+.v-imo{
+       width:100vw;
+
+}
